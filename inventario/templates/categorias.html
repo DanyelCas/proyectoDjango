@@ -1,0 +1,12 @@
+<h1>CATEGORIAS</h1>
+
+<form method="get">
+    <input type="text" name="nombre" placeholder="Buscar por nombre" value="{{ request.GET.nombre }}">
+    <button type="submit">Buscar</button>
+</form>
+
+<ul>
+    {% for categoria in categorias %}
+    <li>{{ categoria }}</li>
+    {% endfor %}
+</ul>
